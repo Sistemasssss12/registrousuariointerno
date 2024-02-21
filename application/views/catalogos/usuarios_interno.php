@@ -73,7 +73,7 @@
 					title: 'Nombre',
 					data: 'nombre',
 					bSortable: false,
-					"width": "25%",
+					"width": "20%",
           mRender: function(data, type, full){
             return '<span class="badge badge-pill badge-dark">#' + full.id + '</span><br><b>'+data+'</b>';
           }
@@ -107,7 +107,7 @@
 					title: 'Accesos',
 					data: 'numero_accesos',
 					bSortable: false,
-					"width": "15%",
+					"width": "10%",
 					mRender: function(data, type, full) {
 						if (data == 0) {
 							return 'Sin registro de accesos';
@@ -123,7 +123,7 @@
 					"width": "10%",
 					mRender: function(data, type, full) {
             let editar = '<a id="editar" href="javascript:void(0)" data-toggle="tooltip" title="Editar" class="fa-tooltip icono_datatable icono_azul_oscuro"><i class="fas fa-edit"></i></a> ';
-            let eliminar = '<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar cliente" id="eliminar" class="fa-tooltip icono_datatable icono_gris"><i class="fas fa-trash"></i></a> ';
+            let eliminar = '<a href="javascript:void(0)" data-toggle="tooltip" title="Eliminar Usuario" id="eliminar" class="fa-tooltip icono_datatable icono_gris"><i class="fas fa-trash"></i></a> ';
             let acceso = '<a href="javascript:void(0)" data-toggle="tooltip" title="Ver accesos" id="acceso" class="fa-tooltip icono_datatable icono_azul_claro"><i class="fas fa-sign-in-alt"></i></a>';
 
             let accion = (full.status == 0)? '<a href="javascript:void(0)" data-toggle="tooltip" title="Activar" id="activar" class="fa-tooltip icono_datatable icono_rojo"><i class="fas fa-ban"></i></a> ' : '<a href="javascript:void(0)" data-toggle="tooltip" title="Desactivar" id="desactivar" class="fa-tooltip icono_datatable icono_verde"><i class="far fa-check-circle"></i></a> ';
